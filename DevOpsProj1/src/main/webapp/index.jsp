@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
 <title>Worker-Registration</title>
 </head>
@@ -52,7 +57,9 @@
 					<td><input type="reset" value="Reset"></td>
 					<td><input type="submit" value="Add to Database"></td>
 				</tr>
-			</table>
+			</table
+				<a href="<%=request.getContextPath()%>/WorkerManageServlet"
+					class="btn btn-success">Go to Dashboard</a>
 	</form>
 
 </body>
