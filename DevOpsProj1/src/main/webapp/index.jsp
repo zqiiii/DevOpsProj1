@@ -57,7 +57,7 @@
 					<td><input type="reset" value="Reset"></td>
 					<td><input type="submit" value="Add to Database"></td>
 				</tr>
-			</table
+			</table>
 				<a href="<%=request.getContextPath()%>/WorkerManageServlet"
 					class="btn btn-success">Go to Dashboard</a>
 	</form>
