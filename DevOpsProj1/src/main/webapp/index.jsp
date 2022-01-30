@@ -13,16 +13,17 @@
 </head>
 	<body bgcolor="white">
 	<form action="WorkerServlet" method="post">
+	<br></br>
 		<center>
-			<h1>Welcome Employee Please fill the detail below</h1>
-
+			<h2>Please fill in your particulars below</h2>
+    <br></br>
 			<table border="2" style="color: black">
 				<tr>
 					<td><b>Worker's Name:</b></td>
 					<td><input type="text" name="name"></td>
 				</tr>
 				<tr>
-					<td><b>D.O.B</b></td>
+					<td><b>BirthDate</b></td>
 					<td><input type="text" name="date"></td>
 				</tr>
 				<tr>
@@ -53,11 +54,12 @@
 						</select></td>
 				</tr>
 
-				<tr>
+			</table>
+			<br></br>
 					<td><input type="reset" value="Reset"></td>
 					<td><input type="submit" value="Add to Database"></td>
-				</tr>
-			</table>
+				
+			<br></br>
 				<a href="<%=request.getContextPath()%>/WorkerManageServlet"
 					class="btn btn-success">Go to Dashboard</a>
 	</form>

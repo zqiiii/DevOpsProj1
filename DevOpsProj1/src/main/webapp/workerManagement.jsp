@@ -17,18 +17,13 @@
 		<br></br>
 			<h3 class="text-center">List of Employees</h3>
 			<hr>
-			<div class="container text-left">
-				<!-- Add new user button redirects to the register.jsp page -->
-				<a href="<%=request.getContextPath()%>/index.jsp"
-					class="btn btn-success">Add New User</a>
-			</div>
 			<br>
 			<!-- Create a table to list out all current users information -->
 			<table class="table">
 				<thead>
 					<tr>
 						<th>Name</th>
-						<th>D.O.B</th>
+						<th>BirthDate</th>
 						<th>Gender</th>
 						<th>Mobile Number</th>
 						<th>Job Scope</th>
@@ -60,6 +55,11 @@ value='${worker.name}' />">Delete</a></td>
 					</c:forEach>
 				</tbody>
 			</table>
+			<div class="container text-left">
+				<!-- Add new user button redirects to the register.jsp page -->
+				<a href="<%=request.getContextPath()%>/index.jsp"
+					class="btn btn-success">Add New User</a>
+			</div>
 		</div>
 	</div>
 
