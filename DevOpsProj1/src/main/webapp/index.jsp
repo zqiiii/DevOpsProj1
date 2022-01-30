@@ -6,12 +6,12 @@
 <meta charset="ISO-8859-1">
 <title>Worker-Registration</title>
 </head>
-	<body bgcolor="white">
+	<body bgcolor="Sapphire Blue">
 	<form action="WorkerServlet" method="post">
 		<center>
 			<h1>Welcome Employee Please fill the detail below</h1>
 
-			<table border="2" style="color: black">
+			<table border="2" style="color: Blue Gray">
 				<tr>
 					<td><b>Worker's Name:</b></td>
 					<td><input type="text" name="name"></td>
