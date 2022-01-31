@@ -66,15 +66,14 @@ public class WorkerManageServlet extends HttpServlet {
 		String action = request.getServletPath();
 		try {
 			switch (action) {
-			case "/insert":
-				break;
-			case "/delete":
+			case "/WorkerManageServlet/delete":
+				deleteWorker(request, response);
 				break;
 			case "/edit":
 				break;
 			case "/update":
 				break;
-			default:
+			case "/WorkerManageServlet/dashboard":
 				listWorkers(request, response);
 				break;
 			}
@@ -110,6 +109,20 @@ public class WorkerManageServlet extends HttpServlet {
 			request.setAttribute("listWorkers", workers);
 			request.getRequestDispatcher("/workerManagement.jsp").forward(request, response);
 			}
+	
+	private void deleteWorker(HttpServletRequest request, HttpServletResponse response) throws SQLException, IOException {
+		// Step 1: Retrieve value from the request
+		String name = request.getParameter("name");
+		// Step 2: Attempt connection with database and execute delete user SQL query
+		try (Connection connection = getConnection();
+				PreparedStatement statement = connection.prepareStatement(DELETE_WORKERS_SQL);) {
+			statement.setString(1, name);
+			int i = statement.executeUpdate();
+		}
+		// Step 3: redirect back to UserServlet dashboard (note: remember to change the
+		// url to your project name)
+		response.sendRedirect("http://localhost:8090/DevOpsProj1/WorkerManageServlet/dashboard");
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
