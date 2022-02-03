@@ -60,7 +60,7 @@
 					<td><input type="submit" value="Add to Database"></td>
 				
 			<br></br>
-				<a href="<%=request.getContextPath()%>/AdminManageServlet"
+				<a href="<%=request.getContextPath()%>/AdminManageServlet/dashboard"
 					class="btn btn-success">Go to Dashboard</a>
 	</form>
 
