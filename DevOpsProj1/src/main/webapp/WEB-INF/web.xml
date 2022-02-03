@@ -24,4 +24,16 @@
 		<url-pattern>/WorkerManageServlet/update</url-pattern>
 		<url-pattern>/WorkerManageServlet/delete</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>AdminManageServlet</servlet-name>
+		<servlet-class>AdminManageServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminManageServlet</servlet-name>
+		<url-pattern>/AdminManageServlet/dashboard</url-pattern>
+		<url-pattern>/AdminManageServlet/edit</url-pattern>
+		<url-pattern>/AdminManageServlet/update</url-pattern>
+		<url-pattern>/AdminManageServlet/delete</url-pattern>
+	</servlet-mapping>
 </web-app>
