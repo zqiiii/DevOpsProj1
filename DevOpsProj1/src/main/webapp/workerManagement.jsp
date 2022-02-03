@@ -58,7 +58,7 @@ value='${worker.name}' />">Delete</a></td>
 			<div class="container text-left">
 				<!-- Add new user button redirects to the register.jsp page -->
 				<a href="<%=request.getContextPath()%>/index.jsp"
-					class="btn btn-success">Add New User</a>
+					class="btn btn-success">Add New Employee</a>
 			</div>
 		</div>
 	</div>
