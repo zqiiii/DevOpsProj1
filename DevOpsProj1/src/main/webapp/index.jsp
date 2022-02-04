@@ -53,16 +53,31 @@
 						<option>Temporary</option>
 						</select></td>
 				</tr>
-
 			</table>
+
+		
+			
+			
 			<br></br>
 					<td><input type="reset" value="Reset"></td>
 					<td><input type="submit" value="Add to Database"></td>
+	
+	</form>
+	
+	<form action="EmailServlet" method="post">	
+			<table>
+			<tr>
+				<td> Email:</td>
+				<td><input type="text" name="email"></td>
+				<br><br>
+				<td> <input type="submit" value="Add Email to Database"></td>
+			</tr>
+			</table>
+			</form>
 				
 			<br></br>
 				<a href="<%=request.getContextPath()%>/WorkerManageServlet/dashboard"
 					class="btn btn-success">Go to Dashboard</a>
-	</form>
 
 </body>
 </html>
